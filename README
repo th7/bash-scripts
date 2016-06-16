@@ -1,0 +1,3 @@
+Copy .secrets.sh.example to home directory as .secrets.sh and fill out
+Source profile.bash in this project
+Source setup-git.bash to set up git configuration
