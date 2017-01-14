@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+curl s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar > ~/Minecraft.jar
+echo '#!/usr/bin/env sh' > /usr/local/bin/minecraft
+echo 'java -jar ~/Minecraft.jar' >> /usr/local/bin/minecraft
+chmod +x /usr/local/bin/minecraft
+

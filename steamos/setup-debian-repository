@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+sudo echo '' >> /etc/apt/sources.list
+sudo echo '### Debian repositories' >> /etc/apt/sources.list
+sudo echo 'deb ftp://ftp.us.debian.org/debian jessie main contrib non-free' >> /etc/apt/sources.list
+
+sudo echo 'deb-src ftp://ftp.us.debian.org/debian jessie main contrib non-free' >> /etc/apt/sources.list
+sudo echo 'Package: *
+Pin: release o=Valve Software LLC
+Pin-Priority: 900
+
+Package: *
+Pin: release l=Debian
+Pin-Priority: 110' >> /etc/apt/preferences
+
