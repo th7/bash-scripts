@@ -6,7 +6,7 @@ RED=31
 GREEN=32
 
 git_status_color() {
-  if [[ -d .git ]] && [[ `git status` =~ ^.*nothing\ to\ commit.*$ ]]; then
+  if [[ `git status 2> /dev/null` =~ ^.*nothing\ to\ commit.*$ ]]; then
   	echo $GREEN
   else
   	echo $RED
