@@ -1,7 +1,0 @@
-#!/usr/vin/env sh
-set -e
-pushd $BASH_SCRIPTS_DIR/steamos
-setup-debian-repositories
-install-java
-install-minecraft
-popd

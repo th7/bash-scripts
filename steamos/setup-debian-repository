@@ -2,8 +2,9 @@
 sudo echo '' >> /etc/apt/sources.list
 sudo echo '### Debian repositories' >> /etc/apt/sources.list
 sudo echo 'deb ftp://ftp.us.debian.org/debian jessie main contrib non-free' >> /etc/apt/sources.list
-
 sudo echo 'deb-src ftp://ftp.us.debian.org/debian jessie main contrib non-free' >> /etc/apt/sources.list
+sudo echo 'deb http://httpredir.debian.org/debian/ jessie-backports main' >> /etc/apt/sources.list
+
 sudo echo 'Package: *
 Pin: release o=Valve Software LLC
 Pin-Priority: 900
@@ -12,3 +13,8 @@ Package: *
 Pin: release l=Debian
 Pin-Priority: 110' >> /etc/apt/preferences
 
+sudo echo 'Package: *
+Pin: release o=Debian,a=jessie-backports
+Pin-Priority: -200' >> /etc/apt/preferences
+
+sudo apt-get update
