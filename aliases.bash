@@ -1,8 +1,2 @@
 alias sbp='source ~/.bash_profile'
 alias hi='history | grep'
-alias terraform-apply='terraform apply --var-file=foundation-testing-th7.tfvars --state=foundation-testing-th7.tfstate'
-alias terraform-plan='terraform plan --var-file=foundation-testing-th7.tfvars --state=foundation-testing-th7.tfstate'
-alias terraform-refresh='terraform refresh --var-file=foundation-testing-th7.tfvars --state-out=foundation-testing-th7.tfstate'
-alias ssh-alpha='ssh -A -i ~/.ssh/terraform ubuntu@$(terraform output --state=foundation-testing-th7.tfstate bastion-alpha)'
-alias ssh-bravo='ssh -A -i ~/.ssh/terraform ubuntu@$(terraform output --state=foundation-testing-th7.tfstate bastion-bravo)'
-alias ssh-charlie='ssh -A -i ~/.ssh/terraform ubuntu@$(terraform output --state=foundation-testing-th7.tfstate bastion-charlie)'
