@@ -10,4 +10,6 @@ source "$BASH_SCRIPTS_DIR/editor.bash"
 source "$BASH_SCRIPTS_DIR/chruby.bash"
 source "$BASH_SCRIPTS_DIR/nvm.bash"
 
+source $BASH_SCRIPTS_DIR/client/*
+
 export HISTCONTROL=ignoreboth:erasedups
