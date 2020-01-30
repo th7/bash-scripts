@@ -16,3 +16,5 @@ brew install chruby
 ruby-install --latest ruby
 source "$BASH_SCRIPTS_DIR/chruby.bash"
 gem install bundler
+
+brew install geckodriver # used to automate firefox
