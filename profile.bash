@@ -1,6 +1,6 @@
 source ~/.secrets.sh
 
-[[ ":$PATH:" != *":/Users/$(whoami)bin:"* ]] && PATH="/Users/$(whoami)/bin:${PATH}"
+[[ ":$PATH:" != *":${HOME}/bin:"* ]] && PATH="${HOME}/bin:${PATH}"
 
 source "$BASH_SCRIPTS_DIR/git-aliases.bash"
 source "$BASH_SCRIPTS_DIR/git-completion.bash"
