@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -e
+
+source setup-git.bash
+brew install ruby-install
+brew install chruby
+brew install duti
+duti -s com.sublimetext.3 public.plain-text all
