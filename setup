@@ -2,12 +2,17 @@
 set -e
 
 source setup-git.bash
+
+brew install nvm
+
+brew install duti
+duti -s com.sublimetext.3 public.plain-text all # use sublime text for text files
+
+brew install postgresql
+brew services start postgresql
+
 brew install ruby-install
 brew install chruby
-brew install nvm
-brew install duti
-
-# use sublime text for text files
-duti -s com.sublimetext.3 public.plain-text all
-
 ruby-install --latest ruby
+source "$BASH_SCRIPTS_DIR/chruby.bash"
+gem install bundler
