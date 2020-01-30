@@ -6,4 +6,8 @@ brew install ruby-install
 brew install chruby
 brew install nvm
 brew install duti
+
+# use sublime text for text files
 duti -s com.sublimetext.3 public.plain-text all
+
+ruby-install --latest ruby
