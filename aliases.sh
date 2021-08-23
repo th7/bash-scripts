@@ -1,4 +1,6 @@
 alias sbp='source ~/.bash_profile'
 alias ebp='subl -wn ~/.bash_profile; sbp'
+alias szp='source ~/.zprofile'
+alias ezp='subl -wn ~/.zprofile; sbp'
 alias hi='history | grep'
 alias be='bundle exec'
