@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-source setup-git.bash
+source setup-git.sh
 
 brew install nvm
 
