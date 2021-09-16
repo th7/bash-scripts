@@ -11,6 +11,4 @@ git_status_color() {
 }
 
 setopt promptsubst
-echo $PROMPT
 PROMPT='%1~%F{$(git_status_color)}$(parse_git_branch)%f $ '
-echo $PROMPT
