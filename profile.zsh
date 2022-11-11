@@ -7,4 +7,4 @@ fpath=("$BASH_SCRIPTS_DIR/zsh-functions" $fpath)
 autoload -Uz compinit
 compinit
 
-setopt histignorealldups
+setopt HISTIGNOREALLDUPS
