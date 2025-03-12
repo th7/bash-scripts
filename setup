@@ -12,6 +12,8 @@ fi
 
 ./setup-git
 
+brew install libpq
+
 brew install nvm
 
 brew install duti
