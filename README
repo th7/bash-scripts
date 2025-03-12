@@ -1,4 +1,9 @@
 Copy .secrets.sh.example to home directory as .secrets.sh and fill out
-Source profile.bash in this project
 Install homebrew
-Execute ./setup
+Add (edit as needed) the following to your ~/.zshrc:
+```
+export BASH_SCRIPTS_DIR="$HOME/dev/bash-scripts"
+source "$BASH_SCRIPTS_DIR/profile.zsh"
+```
+Restart your shell.
+Run `./setup`.

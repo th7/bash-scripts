@@ -1,20 +1,25 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 set -e
 
-source setup-git.sh
+sublime_path=$HOME/Library/Application\ Support/Sublime\ Text/Packages/User
+if [ -d $sublime_path ]; then
+	ln -s $BASH_SCRIPTS_DIR/Preferences.sublime-settings /Preferences.sublime-settings
+else
+	echo 'Could not find Sublime Text at expected path.'
+	echo "Check the install path and update $BASH_SCRIPTS_DIR/setup."
+	exit 1
+fi
+
+./setup-git
 
 brew install nvm
 
 brew install duti
-duti -s com.sublimetext.3 public.plain-text all # use sublime text for text files
-
-brew install postgresql
-brew services start postgresql
+duti -s com.sublimetext.4 public.plain-text all # use sublime text for text files
 
 brew install ruby-install
 brew install chruby
 ruby-install --latest ruby
-source "$BASH_SCRIPTS_DIR/chruby.bash"
-gem install bundler
+source "$BASH_SCRIPTS_DIR/chruby.sh"
 
 brew install geckodriver # used to automate firefox
