@@ -5,6 +5,5 @@ source "$BASH_SCRIPTS_DIR/aliases.sh"
 source "$BASH_SCRIPTS_DIR/editor.sh"
 
 source "$BASH_SCRIPTS_DIR/chruby.sh"
-source "$BASH_SCRIPTS_DIR/nvm.sh"
 source "$BASH_SCRIPTS_DIR/subl.sh"
 source "$BASH_SCRIPTS_DIR/libpq.sh"
