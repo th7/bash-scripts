@@ -1,9 +1,9 @@
 #!/usr/bin/env zsh
 set -e
 
-sublime_path=$HOME/Library/Application\ Support/Sublime\ Text/Packages/User
+sublime_path=$HOME/Library/Application\ Support/Sublime\ Text/Packages
 if [ -d $sublime_path ]; then
-	ln -s $BASH_SCRIPTS_DIR/Preferences.sublime-settings /Preferences.sublime-settings
+	ln -s $BASH_SCRIPTS_DIR/sublime/User $sublime_path
 else
 	echo 'Could not find Sublime Text at expected path.'
 	echo "Check the install path and update $BASH_SCRIPTS_DIR/setup."
