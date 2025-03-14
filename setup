@@ -14,7 +14,7 @@ fi
 
 brew install libpq
 
-brew install nvm
+brew install npm
 
 brew install duti
 duti -s com.sublimetext.4 public.plain-text all # use sublime text for text files
