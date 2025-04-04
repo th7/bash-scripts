@@ -4,3 +4,4 @@ git config --global user.name "Tyler Hartland"
 git config --global user.email $TYLER_EMAIL
 git config --global push.default current
 git config --global core.excludesfile .gitignore_global
+git config --global init.defaultBranch main
