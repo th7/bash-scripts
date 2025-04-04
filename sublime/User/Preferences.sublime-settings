@@ -3,5 +3,10 @@
 	"save_on_focus_lost": true,
 	"trim_trailing_white_space_on_save": true,
 	"auto_complete_include_snippets": false,
-	"auto_complete_include_snippets_when_typing": false
+	"auto_complete_include_snippets_when_typing": false,
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"index_files": true,
 }

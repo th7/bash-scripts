@@ -1,0 +1,6 @@
+// These settings override both User and Default settings for the Ruby syntax
+{
+	"tab_size": 2,
+	"indent_using_spaces": true,
+	"translate_tabs_to_spaces": true
+}
