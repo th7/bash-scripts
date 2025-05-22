@@ -7,6 +7,9 @@
 	[
 		"Dockerfile Syntax Highlighting",
 		"Haml",
+		"JSON Reindent",
 		"Package Control",
+		"Terraform",
+		"TOML",
 	],
 }
