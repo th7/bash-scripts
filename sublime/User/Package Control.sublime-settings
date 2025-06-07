@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"Alignment",
 		"Dockerfile Syntax Highlighting",
 		"Haml",
 		"JSON Reindent",
