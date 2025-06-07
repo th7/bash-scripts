@@ -1,7 +1,3 @@
-alias sbp='source ~/.bash_profile'
-alias ebp='subl -wn ~/.bash_profile; sbp'
-alias szp='source ~/.zprofile'
-alias ezp='subl -wn ~/.zprofile; szp'
 alias szrc='source ~/.zshrc'
 alias ezrc='subl -wn ~/.zshrc; szrc'
 
